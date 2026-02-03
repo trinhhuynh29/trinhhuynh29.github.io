@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 4 - Trang chủ</title>
+    <meta name="author" content="Huỳnh Ngọc Khánh Trinh">
+    <meta name="description" content="Thiết kế Web - Lab 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://dlu.edu.vn/wp-content/uploads/2023/06/cropped-DLU-Logo-full-New-32x32.png" sizes="32x32">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            color: #333;
+        }
+
+        .home-wrap{
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 24px;
+        }
+
+        .home-header{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        
+        .home-header h1{
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 400; /* KHÔNG tô đậm */
+            color: #444;
+
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background-color: #ffffff;
+
+            transition: background-color 0.25s, color 0.25s, transform 0.25s;
+        }
+
+        
+        .card-link:hover{
+            background-color: #f2f6ff;
+            color: #1f4fd8;
+            transform: translateY(-2px);
+        }
+
+        .home-footer{
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        @media (max-width: 850px){
+            .nav-cards{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-wrap">
+
+        <div class="home-header">
+            <h1>BÀI THỰC HÀNH 4: TẠO BIỂU MẪU</h1>
+        </div>
+
+        <div class="nav-cards">
+            <a class="card-link" href="login.html">Trang Đăng nhập</a>
+            <a class="card-link" href="registration.html">Trang Đăng ký học phần</a>
+            <a class="card-link" href="contact.html">Trang Liên hệ</a>
+        </div>
+
+        <div class="home-footer">
+            Thiết kế Web • Lab 4
+        </div>
+
+    </div>
+</body>
+</html>
