@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 - RSS News Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            /* Hiệu ứng nền Gradient chuyển màu chuyên nghiệp */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .glass-card {
+            /* Hiệu ứng kính mờ (Glassmorphism) */
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.8;
+            margin-bottom: 35px;
+        }
+
+        .menu-list {
+            list-style: none;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #333;
+            background: #fff;
+            padding: 16px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hiệu ứng khi di chuột qua nút */
+        .menu-link:hover {
+            transform: translateY(-3px);
+            background: #f8f9fa;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: #764ba2;
+        }
+
+        .menu-link.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+        }
+
+        .menu-link.secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        .author {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.6;
+            font-style: italic;
+        }
+
+        /* Hiệu ứng trang trí nhỏ */
+        .circle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>Lab 11</h1>
+        <p class="subtitle">Hệ thống đọc tin RSS News Reader</p>
+
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="news/index.html" class="menu-link">🚀 Xem Trang Tin Tức</a>
+            </li>
+            
+        </ul>
+
+        
+    </div>
+
+</body>
+</html>
